@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Page container -->
+    <div class = "container">
+
+        <!-- Jumbotron -->
+        <div class = "jumbotron">
+            <!-- Jumbotron titles-->
+            <div class = "jumboTitles"><h1>Welcome to Friend Finder!</h1></div>
+            <hr />
+            <div class = "jumboTitles"><h2>Answer our survey and find a similar friend!</h2></div>
+            <!-- Jumbotron titles ends-->
+
+            <!-- Survey card -->
+            <div class = "card" id ="surveyLink">
+                <a href="/survey">
+                <button type = "button" class = "btn btn-lg btn-primary" id = "surveyBtn">
+                    <span class = "GO">Start Survey</span>
+                </button> 
+                </a>
+            </div> <!-- Survey card end -->
+            <br />
+        </div><!-- Jumbotron ends -->
+        <hr />
+
+        <!-- Friends list window -->
+        <div>
+            <a href="/api/friends">Friends List (API)</a>
+        </div> <!-- Friends list window ends-->
+        <br />
+
+    </div><!-- Page container ends-->
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+        <h4> DISCLAIMER:</h4>
+
+            <h5>This app uses the BFI-10 to compare personalities and infer similarities, based on user responses to the survey items. This application does not claim to be able to assess user compatibility.
+
+            Please be aware that entering your name, uploading a photo and clicking on the survey button indicate your autonomous willingness and informed consent to participate in this assessment. 
+
+            Due to the fact that this assessment is not being clinically administered, it is not recommended that it be used for making life-changing decisions, or for medical, or theraputic purposes. This application should be used ONLY for the amusement of user(s).</h5>
+
+            <h6>Adapted from: Rammstedt, B. & John, O.P. (2007). Measuring personality in one minute or less: A 10-item short version of  the Big Five Inventory in English and German. Journal of Research in Personality, 41, 203–212. </h6>
+    </footer> <!-- Footer ends --> 
+</body>
+</html>
