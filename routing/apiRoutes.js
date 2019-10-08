@@ -1,4 +1,4 @@
-const friends = requestAnimationFrame("../data/friends.js");
+const friends = require("../app/data/friends");
 
 module.exports = function (app){
     app.get ("/api/friends", function(req, res){
@@ -10,7 +10,7 @@ module.exports = function (app){
         let bestMatch = {
             name: "", 
             photo: "",
-            friendDifference: 1000
+            friendDifference: 100
         };
     let userData = req.body; 
     let userName = userData.name; 
@@ -27,7 +27,7 @@ module.exports = function (app){
     };
     
     console.log (`Name: ${userName}`); 
-    console.log (`User Score: ${userScore}`); 
+    console.log (`User Score: ${userScores}`); 
 
     let sum = b.reduce((a, b) => a + b, 0);
     console.log (`User's Sum Score: ${sum}`); 
