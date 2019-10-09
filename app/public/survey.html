@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Style CDNs -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Additional CSS -->
-    <link rel="stylesheet" type="text/css" href="/app/public/style.css"/>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- CDNs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <title>Survey</title>
 </head>
 <body>
@@ -37,13 +36,16 @@
                 <h3 class = "aboutHead">About You</h3>
                 <hr /> 
                 <h4 class = "questionsAbout">Name (required):</h4>
+                <input type="text" name="" id="name" class="form-control" required/>
+                <h4>Link to photo (Required)</h4>
                 <h4 class = "questionsAbout">Photo (required):</h4>
+                <input type="text" name="" id="photo" class="form-control" required />
                 <hr /> <!-- Survey card questions about you ends -->
                 
                 <ul> <!-- Survey card questions main -->
                     <!-- Q1 -->
                     <li><h3 class = "questionsMain"> I am a reserved person. 
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q1">
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q1">
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -57,7 +59,7 @@
 
                     <!-- Q2 -->
                     <li><h3 class = "questionsMain"> I trust other people.
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q2">  
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q2">  
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -71,7 +73,7 @@
 
                     <!-- Q3 -->
                     <li><h3 class = "questionsMain"> I tend to be lazy. 
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q3">  
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q3">  
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -85,7 +87,7 @@
 
                     <!-- Q4 -->
                     <li><h3 class = "questionsMain"> I am generally relaxed, not stressed.
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q4">  
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q4">  
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -99,7 +101,7 @@
 
                     <!-- Q5 -->
                     <li><h3 class = "questionsMain">I have few artistic interests. 
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q5">  
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q5">  
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -113,7 +115,7 @@
 
                     <!-- Q6 -->
                     <li><h3 class = "questionsMain"> I am sociable.
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q6">
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q6">
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -127,7 +129,7 @@
 
                         <!-- Q7 -->
                         <li><h3 class = "questionsMain"> I tend to find fault with others.
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q7"> 
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q7"> 
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -141,7 +143,7 @@
 
                         <!-- Q8 -->
                         <li><h3 class = "questionsMain"> I do my job well.
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q8"> 
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q8"> 
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -155,7 +157,7 @@
 
                     <!-- Q9 -->
                     <li><h3 class = "questionsMain"> I get nervous easily.
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q9"> 
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q9"> 
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -169,7 +171,7 @@
 
                     <!-- Q10 -->
                     <li><h3 class = "questionsMain"> I have an active imagination.
-                        <select data-placeholder= ""  class = "chosen-select" name="" id="q10"> 
+                        <select data-placeholder= ""  class="chosen-select" name="" id="q10"> 
                             <option value=""></option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2 (Disagree)</option>
@@ -184,53 +186,51 @@
                 <br />
                 </div> <!-- Survey card ends -->
                 <br />
-            </div> <!-- Page container ends-->
-            <hr />
-            <!-- Survey submit button -->
-            <button type="submit" class="btn btn-primary btn-lg btn-block" id = "submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
-          </button> <!-- Survey submit button ends-->
+                <hr />
+                <!-- Survey submit button -->
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id = "submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+                </button> <!-- Survey submit button ends-->
+                <br />
           <br />
-          <br />
-
-    <!-- Footer -->
-    <footer>
-            <h4> DISCLAIMER:</h4>
-
-                    <h5>This app uses the BFI-10 to compare personalities and infer similarities, based on user responses to the survey items. This application does not claim to be able to assess user compatibility.
-    
-                    Please be aware that entering your name, uploading a photo and clicking on the survey button indicate your autonomous willingness and informed consent to participate in this assessment. 
-    
-                    Due to the fact that this assessment is not being clinically administered, it is not recommended that it be used for making life-changing decisions, or for medical, or theraputic purposes. This application should be used ONLY for the amusement of user(s).</h5>
-    
-                    <h6>Adapted from: Rammstedt, B. & John, O.P. (2007). Measuring personality in one minute or less: A 10-item short version of  the Big Five Inventory in English and German. Journal of Research in Personality, 41, 203–212. </h6>
-        </footer> <!-- Footer ends --> 
-
-        <!-- Results modal ends -->
-        <div id="resultsModal" class= "modal fade" role="dialog">
-            <!-- Dialog modal -->
-            <div class = "modal-dialog">
-                <!-- Modal content -->
-                <div  class = "modal-content">
-                    <!-- Modal header -->
-                    <div  class = "modal-header">
-                        <button type = "button" class = "close" data-dismiss = "modal"> &times;
-                        </button>
-                        <h2 class = "modal-title"><strong> Best Match</strong></h2>
-                    </div><!-- Modal header ends -->
-                    <!-- Modal body -->
-                    <div class = "modal-body">
-                        <h2 id = "matchName"></h2>
-                        <img id = "matchImg" src="" alt="User does not have a photo, or it could not be loaded"/>
-                    </div><!-- Modal body ends -->
-                    <!-- Modal footer -->
-                    <div class = "modal-footer">
-                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">Close
-                        </button>
-                    </div>  <!-- Modal footer ends-->
-                </div><!-- Modal content ends -->
-            </div><!-- Dialog modal ends -->
-        </div> <!-- Results modal ends -->
-
+          
+          <!-- Footer -->
+          <footer>
+              <h4> DISCLAIMER:</h4>
+              
+              <h5>This app uses the BFI-10 to compare personalities and infer similarities, based on user responses to the survey items. This application does not claim to be able to assess user compatibility.
+                  
+                  Please be aware that entering your name, uploading a photo and clicking on the survey button indicate your autonomous willingness and informed consent to participate in this assessment. 
+                  
+                  Due to the fact that this assessment is not being clinically administered, it is not recommended that it be used for making life-changing decisions, or for medical, or theraputic purposes. This application should be used ONLY for the amusement of user(s).</h5>
+                  
+                  <h6>Adapted from: Rammstedt, B. & John, O.P. (2007). Measuring personality in one minute or less: A 10-item short version of  the Big Five Inventory in English and German. Journal of Research in Personality, 41, 203–212. </h6>
+                </footer> <!-- Footer ends --> 
+                
+                <!-- Results modal -->
+                <div id="resultsModal" class= "modal fade" role="dialog">
+                    <!-- Dialog modal -->
+                    <div class="modal-dialog">
+                        <!-- Modal content -->
+                        <div  class="modal-content">
+                            <!-- Modal header -->
+                            <div  class="modal-header">
+                                <h2 class="modal-title"><strong> Best Match </strong></h2>
+                            </div><!-- Modal header ends -->
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h2 id="matchName"></h2>
+                                <img id="matchImg" src="" alt="User does not have a photo, or it could not be loaded"/>
+                            </div><!-- Modal body ends -->
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class = "btn btn-default" data-dismiss="modal"> Close
+                                </button>
+                            </div>  <!-- Modal footer ends-->
+                        </div><!-- Modal content ends -->
+                    </div><!-- Dialog modal ends -->
+                </div> <!-- Results modal ends -->
+    </div> <!-- Page container ends-->
+                
         <script type = "text/javascript" >
             $("#submit").on("click", function(){
                 function validateForm() {
@@ -246,9 +246,9 @@
                 }
 
                 if (validateForm()==true){
-                    var userData = {
-                        name: $("name").val(),
-                        photo: $("photo").val(),
+                    let userData = {
+                        name: $("#name").val(),
+                        photo: $("#photo").val(),
                         scores:[
                             $("#q1").val(),
                             $("#q2").val(),
@@ -263,7 +263,7 @@
                         ]
                     }; 
 
-                    var currentURL = window.location.origin;
+                    let currentURL = window.location.origin;
 
                     $.post(currentURL + "/api/friends", userData, function (data){
                         $("#matchName").text(data.name);
@@ -272,11 +272,11 @@
                     })
                 }
                 else {
-                    alert(`Please ensure that all fields have been filled before submitting!`)
+                    alert(`Please ensure that all fields have been filled before submitting!`);
                 }
                 return false;
-            })
+            });
         </script>
 
     </body>
-    </html>
+</html>

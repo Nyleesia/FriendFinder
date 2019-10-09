@@ -10,7 +10,7 @@ module.exports = function (app){
         let bestMatch = {
             name: "", 
             photo: "",
-            friendDifference: 100
+            friendDifference: 1000
         };
     let userData = req.body; 
     let userName = userData.name; 
