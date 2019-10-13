@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Reset CSS -->
+     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,6 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
     
     <title>Home</title>
 </head>
@@ -18,14 +23,15 @@
 
         <!-- Jumbotron -->
         <div class = "jumbotron">
+            <div class = "backgroundImg"> <!-- Background image container-->
             <!-- Jumbotron titles-->
             <div class = "jumboTitles"><h1>Welcome to Friend Finder!</h1></div>
             <hr />
-            <div class = "jumboTitles"><h2>Answer our survey and find a similar furry, feathery of scaly friend!</h2></div>
+            <div class = "jumboTitles"><h2>Answer our survey and find yurself a furry, feathery or scaly sprit animal!</h2></div>
             <!-- Jumbotron titles ends-->
 
             <!-- Survey card -->
-            <div class = "card" id ="surveyLink">
+            <div class = "btn btn primary" id ="surveyLink">
                 <a href="/survey">
                 <button type = "button" class = "btn btn-lg btn-primary" id = "surveyBtn">
                     <span class = "GO">Start Survey</span>
@@ -33,13 +39,18 @@
                 </a>
             </div> <!-- Survey card end -->
             <br />
+        </div> <!-- Background image container  ends-->
+
         </div><!-- Jumbotron ends -->
         <hr />
-
-        <!-- Friends list window -->
-        <div>
-            <a href="/api/friends">Users (API)</a>
-        </div> <!-- Friends list window ends-->
+        <br />
+        <br/>
+        <div class = "separator">
+        <!-- Friends list link -->
+        <div class="center">
+            <button class="apiLink"><a href="/api/friends">Spirit Animals (API)</a></button>
+        </div><!-- Friends list link ends-->
+    </div>
         <br />
 
         <hr />
@@ -48,15 +59,15 @@
         <footer>
             <h4> DISCLAIMER:</h4>
             
-            <h5>This app uses the BFI-10 to compare personalities and infer similarities, based on user responses to the survey items. This application does not claim to be able to assess user compatibility.
+            <h5>This app uses the BFI-10 to compare subjective personalities and infer similarities, based on human user responses to the survey items. This application does not claim to be able to assess user compatibility to any of our spirit animals.
                 
                 Please be aware that entering your name, uploading a photo and clicking on the survey button indicate your autonomous willingness and informed consent to participate in this assessment. 
                 
-                Due to the fact that this assessment is not being clinically administered, it is not recommended that it be used for making life-changing decisions, or for medical, or theraputic purposes. This application should be used ONLY for the amusement of user(s).</h5>
+                Due to the fact that this assessment is not being clinically administered, it is not recommended that it be used for making life-altering decisions, nor shoul it be used for medical/ theraputic purposes. This application should be used ONLY for the amusement of user(s).</h5>
                 
-                <h6>Adapted from: Rammstedt, B. & John, O.P. (2007). Measuring personality in one minute or less: A 10-item short version of  the Big Five Inventory in English and German. Journal of Research in Personality, 41, 203–212. </h6>
+                <h6>Survey adapted from: Rammstedt, B. & John, O.P. (2007). Measuring personality in one minute or less: A 10-item short version of  the Big Five Inventory in English and German. Journal of Research in Personality, 41, 203–212. </h6>
             </footer> <!-- Footer ends --> 
-            
+  
         </div><!-- Page container ends-->
 </body>
 </html>

@@ -46,9 +46,9 @@ module.exports = function (app){
         console.log(`*************************${totalDifference}`);
 
         if (totalDifference <= bestMatch.friendDifference){
-            bestMatch.name = friends[1].name; 
-            bestMatch.photo = friends[1].photo; 
-            bestMatch.friendDifference = friends[1].friendDifference; 
+            bestMatch.name = friends[i].name; 
+            bestMatch.photo = friends[i].photo; 
+            bestMatch.friendDifference = totalDifference; 
         }
 
         console.log (`Total Difference: ${totalDifference}`);

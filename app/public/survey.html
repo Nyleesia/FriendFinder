@@ -9,21 +9,40 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>Survey</title>
 </head>
 <body>
     <!-- Page container -->
     <div class = "container">
 
-            <!-- Jumbotron -->
-            <div class = "jumbotron">
-                <!-- Jumbotron titles-->
-                <div class = "jumboTitles"><h1>Welcome to Friend Finder!</h1></div>
-                <hr />
-                <div class = "jumboTitles"><h2>Answer our survey and find a similar friend!</h2></div>
-                <!-- Jumbotron titles ends-->
-            </div><!-- Jumbotron ends -->
-            <hr />
+ <!-- Jumbotron -->
+ <div class = "jumbotron">
+        <div class = "backgroundImg"> <!-- Background image container-->
+        <!-- Jumbotron titles-->
+        <div class = "jumboTitles"><h1>Welcome to Friend Finder!</h1></div>
+        <hr />
+        <div class = "jumboTitles"><h2>Answer our survey and find yurself a furry, feathery or scaly sprit animal!</h2></div>
+        <!-- Jumbotron titles ends-->
+
+        <br />
+    </div> <!-- Background image container  ends-->
+
+    </div><!-- Jumbotron ends -->
+    <hr />
+    <br />
+    <br/>
+    <div class = "separator">
+    <!-- Friends list link -->
+    <div class="center">
+        <button class="apiLink"><a href="/api/friends">Spirit Animals (API)</a></button>
+    </div><!-- Friends list link ends-->
+</div>
+    <br />
+
+    <hr />
+    
 
             <!-- Survey card -->
             <div class = "card" id ="survey"> 
@@ -33,12 +52,12 @@
                 <hr /> <!-- Survey card heading ends -->
 
                 <!-- Survey card questions about you -->
-                <h3 class = "aboutHead">About You</h3>
+                <h3 class = "aboutHead">About You:</h3>
                 <hr /> 
-                <h4 class = "questionsAbout">Name (required):</h4>
+                <h4 class = "questionsAbout">Name (required):
                 <input type="text" name="" id="name" class="form-control" required/>
-                <h4>Link to photo (Required)</h4>
-                <h4 class = "questionsAbout">Photo (required):</h4>
+                Link to photo (required):</h4>
+                <h4 class = "questionsAbout"></h4>
                 <input type="text" name="" id="photo" class="form-control" required />
                 <hr /> <!-- Survey card questions about you ends -->
                 
@@ -195,15 +214,15 @@
           
           <!-- Footer -->
           <footer>
-              <h4> DISCLAIMER:</h4>
-              
-              <h5>This app uses the BFI-10 to compare personalities and infer similarities, based on user responses to the survey items. This application does not claim to be able to assess user compatibility.
-                  
-                  Please be aware that entering your name, uploading a photo and clicking on the survey button indicate your autonomous willingness and informed consent to participate in this assessment. 
-                  
-                  Due to the fact that this assessment is not being clinically administered, it is not recommended that it be used for making life-changing decisions, or for medical, or theraputic purposes. This application should be used ONLY for the amusement of user(s).</h5>
-                  
-                  <h6>Adapted from: Rammstedt, B. & John, O.P. (2007). Measuring personality in one minute or less: A 10-item short version of  the Big Five Inventory in English and German. Journal of Research in Personality, 41, 203–212. </h6>
+                <h4> DISCLAIMER:</h4>
+            
+                <h5>This app uses the BFI-10 to compare subjective personalities and infer similarities, based on human user responses to the survey items. This application does not claim to be able to assess user compatibility to any of our spirit animals.
+                    
+                    Please be aware that entering your name, uploading a photo and clicking on the survey button indicate your autonomous willingness and informed consent to participate in this assessment. 
+                    
+                    Due to the fact that this assessment is not being clinically administered, it is not recommended that it be used for making life-altering decisions, nor shoul it be used for medical/ theraputic purposes. This application should be used ONLY for the amusement of user(s).</h5>
+                    
+                    <h6>Survey adapted from: Rammstedt, B. & John, O.P. (2007). Measuring personality in one minute or less: A 10-item short version of  the Big Five Inventory in English and German. Journal of Research in Personality, 41, 203–212. </h6>
                 </footer> <!-- Footer ends --> 
                 
                 <!-- Results modal -->

@@ -14,6 +14,7 @@ let friends = [
         photo: "http://www.americanaquariumproducts.com/images/graphics/cometredwhite.jpg",
         scores: [5, 7, 4, 3, 1, 7, 6, 1, 4, 5]
       },
+      
       {
         name: "Klaus",
         photo: "https://www.pets4homes.co.uk/images/classifieds/2019/02/10/2207790/large/german-shepherd-mix-puppy-5c60934a7ad68.jpg",
